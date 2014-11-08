@@ -1,4 +1,7 @@
 <!-- .slide: data-background="black" -->
+## Have Data, Want Scale
+# Indefinitely
+An Introduction to Ceph
 Note: Every one of us has certain prized possessions. Something that,
 despite us all realizing that the truly important things in life are
 immaterial, we all have things that we are proud to own and that we
