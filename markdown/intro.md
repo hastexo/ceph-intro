@@ -60,9 +60,18 @@ data. And it's how we store that data that makes a huge difference to
 the success of those systems.
 
 
+<!-- .slide: data-background="http://upload.wikimedia.org/wikipedia/commons/4/4e/Open_Source_Initiative_keyhole.svg" data-background-size="contain" -->
 Note: Now in recent history, in the last 10-15 years, we've seen a
 revolution sweep away all of IT, and that revolution is called open
-source (or free software, depending on your personal conviction).
+source...
+
+Source: http://commons.wikimedia.org/wiki/File:Open_Source_Initiative_keyhole.svg
+
+
+<!-- .slide: data-background="http://upload.wikimedia.org/wikipedia/en/2/22/Heckert_GNU_white.svg" data-background-size="contain" -->
+Note: ...or free software, depending on your personal conviction.
+
+Source: http://en.wikipedia.org/wiki/File:Heckert_GNU_white.svg
 
 
 Note: But strangely, the storage industry had maintained a strange
