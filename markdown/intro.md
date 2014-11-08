@@ -1,29 +1,49 @@
+<!-- .slide: data-background="black" -->
 Note: Every one of us has certain prized possessions. Something that,
 despite us all realizing that the truly important things in life are
 immaterial, we all have things that we are proud to own and that we
 would have trouble giving up.
 
 
-Note: For most people, those are things like maybe a car, for me it
-happens to be this road bicycle, and for many people it will be their
-house.
+<!-- .slide: data-background="https://farm6.staticflickr.com/5476/12593834865_ae920f9b55_k_d.jpg" data-background-size="cover" -->
+Note: For most people, those are things like maybe a car.
+
+Source: https://flic.kr/p/kbSGkT
+
+
+<!-- .slide: data-background="https://lh4.googleusercontent.com/-qKxRCUPE8pA/VArO1dh04QI/AAAAAAAAErg/YZwNe1CJqVc/s0-U-I/P4830300.JPG" data-background-size="cover" -->
+Note: For me it happens to be this road bicycle, and for many people
+it will be their house, or their stereo system, or maybe their best
+cooking knife.
 
 
 Note: Strangely enough, though, we seem to be relatively indifferent
-to the things that are the important parts of said prized
-possessions. For a car, the most important parts, the things that
+to the things that are the truly important parts of said prized
+possessions.
+
+
+<!-- .slide: data-background="https://farm4.staticflickr.com/3370/3308974893_dc8dfba391_b_d.jpg" data-background-size="cover" -->
+Note: For a car, the most important parts, the things that
 truly determine whether the car can be driven in the first place, and
 the things that can also use potentially fatal damage upon failure,
 are the tires.
 
+Source: https://flic.kr/p/63pmXg
 
+
+<!-- .slide: data-background="https://farm5.staticflickr.com/4021/4624121049_d78fb53cd0_b_d.jpg" data-background-size="cover" -->
 Note: And for a house, the part that determines its stability and its
 use for shelter the most is arguably the foundation.
 
+Source: https://flic.kr/p/83BQ5Z
 
+
+<!-- .slide: data-background="https://farm3.staticflickr.com/2713/4038233322_294014df96_o_d.jpg" data-background-size="cover" -->
 Note: However, people seem to be much more keen to show off their
 living room or their front porch, or their patio, rather than, say,
 the concrete in the foundation, or the rebar in that concrete.
+
+Source: https://flic.kr/p/79R15s
 
 
 Note: And unsurprisingly, IT is much the same way. What we're proud
