@@ -17,10 +17,7 @@ Source: https://flic.kr/p/kbSGkT
 <!-- .slide: data-background="https://lh4.googleusercontent.com/-qKxRCUPE8pA/VArO1dh04QI/AAAAAAAAErg/YZwNe1CJqVc/s0-U-I/P4830300.JPG" data-background-size="cover" -->
 Note: For me it happens to be this road bicycle, and for many people
 it will be their house, or their stereo system, or maybe their best
-cooking knife.
-
-
-Note: Strangely enough, though, we seem to be relatively indifferent
+cooking knife. Strangely enough, though, we seem to be relatively indifferent
 to the things that are the truly important parts of said prized
 possessions.
 
@@ -49,15 +46,26 @@ the concrete in the foundation, or the rebar in that concrete.
 Source: https://flic.kr/p/79R15s
 
 
+<!-- TODO: insert images -->
 Note: And unsurprisingly, IT is much the same way. What we're proud
-off, what we like to show off, are social networks, or mobile apps, or
-fancy distributed systems solving the mysteries of the universe.
+of, what we like to show off, are social networks, or mobile apps, or
+fancy distributed systems solving the mysteries of the
+universe. Storage systems, in contrast ...
 
 
+<!-- .slide: data-background="https://farm4.staticflickr.com/3817/12436753284_6f866360c4_k_d.jpg" data-background-size="cover" -->
+Note: ... well, people usually find them somewhat boring.
+
+Source: https://flic.kr/p/jWZBsL
+
+
+<!-- .slide: data-background="https://farm4.staticflickr.com/3506/3694634775_47e9c332e1_o_d.jpg" data-background-size="cover" -->
 Note: Yet what's crucially important, what determines whether these
 systems are actually useful or whether they are meaningless shells, is
 data. And it's how we store that data that makes a huge difference to
 the success of those systems.
+
+Source: https://flic.kr/p/6CtYcz
 
 
 <!-- .slide: data-background="http://upload.wikimedia.org/wikipedia/commons/4/4e/Open_Source_Initiative_keyhole.svg" data-background-size="contain" -->
@@ -74,26 +82,36 @@ Note: ...or free software, depending on your personal conviction.
 Source: http://en.wikipedia.org/wiki/File:Heckert_GNU_white.svg
 
 
+<!-- .slide: data-background="https://farm3.staticflickr.com/2607/3868876430_c02559b34e_o_d.jpg" data-background-size="cover" -->
 Note: But strangely, the storage industry had maintained a strange
 kind of immunity against that revolution. While vendors adopted Linux
 as a platform they would support, storage systems were still rife with
 vendor lock-in. Vendors would essentially sell you overpriced
-refrigerators, and if you wanted to make one refrigerator talk to
-another, tech support and sales reps would laugh at you. In fact,
-they'd even laugh at you if you wanted to kick out the fibre channel
-switch vendor **they** preferred for one that **you** wanted.
+refrigerators, and if you so much as wanted to...
+
+Source: https://flic.kr/p/6TT1b3
 
 
+<!-- .slide: data-background="https://farm4.staticflickr.com/3777/8847016207_374c5b450e_k_d.jpg" data-background-size="cover" -->
+Note: ... make one refrigerator talk to another, tech support and
+sales reps would laugh at you. In fact, they'd even laugh at you if
+you wanted to kick out the fibre channel switch vendor **they**
+preferred for one that **you** wanted.
+
+Source: https://flic.kr/p/etMgGc
+
+
+<!-- .slide: data-background="images/ceph-logo.svg" data-background-size="contain" -->
 Note: And then came Ceph.
 
-
-Note: Ceph is a distributed storage system designed to provide block,
+Ceph is a distributed storage system designed to provide block,
 file and object storage on a software-defined platform running on
 commodity hardware, providing automatic scale-out and high
 availability on a Petabyte scale using open replication protocols, all
 under a free software license.
 
 
+<!-- .slide: data-background="images/bingo.png" data-background-size="contain" -->
 Note: Too many buzzwords? Thought so. So let's take a look at how this
 works, and what's so special about it.
 
@@ -109,6 +127,7 @@ filesystem, but without its shortcomings. In short, it was meant to be
 "Lustre without the suck".
 
 
+<!-- .slide: data-background="https://farm2.staticflickr.com/1264/1425884952_70a8ba747e_o_d.jpg" data-background-size="cover" -->
 Note: It originally came out of a research project (and PhD thesis) at
 the University of California, Santa Cruz (UCSC). The doctoral
 candidate was Sage Weil.
@@ -251,3 +270,4 @@ open-source cloud platforms like Apache CloudStack, OpenNebula or
 Eucalyptus.
 
 
+<iframe class="stretch" src="https://asciinema.org/api/asciicasts/13107?speed=2&amp;autoplay=1" id="asciicast-iframe-13107" name="asciicast-iframe-13107" scrolling="yes"></iframe>
