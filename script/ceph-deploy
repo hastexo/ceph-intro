@@ -1,0 +1,728 @@
+Script started on Sat Nov  8 23:19:46 2014
+]0;vagrant@alice: ~vagrant@alice:~$ ceph-deploy new daisy eric frank
+[[1mceph_deploy.conf[0m][[1;34mDEBUG[0m ] found configuration file at: /home/vagrant/.cephdeploy.conf
+[[1mceph_deploy.cli[0m][[1;37mINFO[0m  ] Invoked (1.5.19): /usr/bin/ceph-deploy new daisy eric frank
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Creating new cluster named ceph
+[[1mceph_deploy.new[0m][[1;37mINFO[0m  ] making sure passwordless SSH succeeds
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: alice 
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: ssh -CT -o BatchMode=yes daisy
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: daisy 
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mdaisy[0m][[1;34mDEBUG[0m ] find the location of an executable
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo /bin/ip link show
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo /bin/ip addr show
+[[1mdaisy[0m][[1;34mDEBUG[0m ] IP addresses found: ['192.168.144.114', '192.168.133.114', '192.168.122.114', '192.168.121.168']
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Resolving host daisy
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Monitor daisy at 192.168.122.114
+[[1mceph_deploy.new[0m][[1;37mINFO[0m  ] making sure passwordless SSH succeeds
+[[1meric[0m][[1;34mDEBUG[0m ] connected to host: alice 
+[[1meric[0m][[1;37mINFO[0m  ] Running command: ssh -CT -o BatchMode=yes eric
+[[1meric[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1meric[0m][[1;34mDEBUG[0m ] connected to host: eric 
+[[1meric[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1meric[0m][[1;34mDEBUG[0m ] detect machine type
+[[1meric[0m][[1;34mDEBUG[0m ] find the location of an executable
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo /bin/ip link show
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo /bin/ip addr show
+[[1meric[0m][[1;34mDEBUG[0m ] IP addresses found: ['192.168.144.115', '192.168.133.115', '192.168.122.115', '192.168.121.208']
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Resolving host eric
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Monitor eric at 192.168.122.115
+[[1mceph_deploy.new[0m][[1;37mINFO[0m  ] making sure passwordless SSH succeeds
+[[1mfrank[0m][[1;34mDEBUG[0m ] connected to host: alice 
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: ssh -CT -o BatchMode=yes frank
+[[1mfrank[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mfrank[0m][[1;34mDEBUG[0m ] connected to host: frank 
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mfrank[0m][[1;34mDEBUG[0m ] find the location of an executable
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo /bin/ip link show
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo /bin/ip addr show
+[[1mfrank[0m][[1;34mDEBUG[0m ] IP addresses found: ['192.168.133.116', '192.168.121.183', '192.168.144.116', '192.168.122.116']
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Resolving host frank
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Monitor frank at 192.168.122.116
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Monitor initial members are ['daisy', 'eric', 'frank']
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Monitor addrs are ['192.168.122.114', '192.168.122.115', '192.168.122.116']
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Creating a random mon key...
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Writing monitor keyring to ceph.mon.keyring...
+[[1mceph_deploy.new[0m][[1;34mDEBUG[0m ] Writing initial config to ceph.conf...
+]0;vagrant@alice: ~vagrant@alice:~$ [Kceph-deploy mon create daisy eric frank
+[[1mceph_deploy.conf[0m][[1;34mDEBUG[0m ] found configuration file at: /home/vagrant/.cephdeploy.conf
+[[1mceph_deploy.cli[0m][[1;37mINFO[0m  ] Invoked (1.5.19): /usr/bin/ceph-deploy mon create daisy eric frank
+[[1mceph_deploy.mon[0m][[1;34mDEBUG[0m ] Deploying mon, cluster ceph hosts daisy eric frank
+[[1mceph_deploy.mon[0m][[1;34mDEBUG[0m ] detecting platform for host daisy ...
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: daisy 
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.mon[0m][[1;37mINFO[0m  ] distro info: Ubuntu 12.04 precise
+[[1mdaisy[0m][[1;34mDEBUG[0m ] determining if provided host has same hostname in remote
+[[1mdaisy[0m][[1;34mDEBUG[0m ] get remote short hostname
+[[1mdaisy[0m][[1;34mDEBUG[0m ] deploying mon to daisy
+[[1mdaisy[0m][[1;34mDEBUG[0m ] get remote short hostname
+[[1mdaisy[0m][[1;34mDEBUG[0m ] remote hostname: daisy
+[[1mdaisy[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1mdaisy[0m][[1;34mDEBUG[0m ] create the mon path if it does not exist
+[[1mdaisy[0m][[1;34mDEBUG[0m ] checking for done path: /var/lib/ceph/mon/ceph-daisy/done
+[[1mdaisy[0m][[1;34mDEBUG[0m ] done path does not exist: /var/lib/ceph/mon/ceph-daisy/done
+[[1mdaisy[0m][[1;37mINFO[0m  ] creating keyring file: /var/lib/ceph/tmp/ceph-daisy.mon.keyring
+[[1mdaisy[0m][[1;34mDEBUG[0m ] create the monitor keyring file
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo ceph-mon --cluster ceph --mkfs -i daisy --keyring /var/lib/ceph/tmp/ceph-daisy.mon.keyring
+[[1mdaisy[0m][[1;34mDEBUG[0m ] ceph-mon: mon.noname-a 192.168.122.114:6789/0 is local, renaming to mon.daisy
+[[1mdaisy[0m][[1;34mDEBUG[0m ] ceph-mon: set fsid to c22aecc1-4066-4a49-b2ac-2e1c591b1d37
+[[1mdaisy[0m][[1;34mDEBUG[0m ] ceph-mon: created monfs at /var/lib/ceph/mon/ceph-daisy for mon.daisy
+[[1mdaisy[0m][[1;37mINFO[0m  ] unlinking keyring file /var/lib/ceph/tmp/ceph-daisy.mon.keyring
+[[1mdaisy[0m][[1;34mDEBUG[0m ] create a done file to avoid re-doing the mon deployment
+[[1mdaisy[0m][[1;34mDEBUG[0m ] create the init path if it does not exist
+[[1mdaisy[0m][[1;34mDEBUG[0m ] locating the `service` executable...
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo initctl emit ceph-mon cluster=ceph id=daisy
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph --admin-daemon /var/run/ceph/ceph-mon.daisy.asok mon_status
+[[1mdaisy[0m][[1;34mDEBUG[0m ] ********************************************************************************
+[[1mdaisy[0m][[1;34mDEBUG[0m ] status for monitor: mon.daisy
+[[1mdaisy[0m][[1;34mDEBUG[0m ] {
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "election_epoch": 0, 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "extra_probe_peers": [
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     "192.168.122.115:6789/0", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     "192.168.122.116:6789/0"
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   ], 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "monmap": {
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     "created": "0.000000", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     "epoch": 0, 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     "fsid": "c22aecc1-4066-4a49-b2ac-2e1c591b1d37", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     "modified": "0.000000", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     "mons": [
+[[1mdaisy[0m][[1;34mDEBUG[0m ]       {
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "addr": "192.168.122.114:6789/0", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "name": "daisy", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "rank": 0
+[[1mdaisy[0m][[1;34mDEBUG[0m ]       }, 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]       {
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "addr": "0.0.0.0:0/1", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "name": "eric", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "rank": 1
+[[1mdaisy[0m][[1;34mDEBUG[0m ]       }, 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]       {
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "addr": "0.0.0.0:0/2", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "name": "frank", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]         "rank": 2
+[[1mdaisy[0m][[1;34mDEBUG[0m ]       }
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     ]
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   }, 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "name": "daisy", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "outside_quorum": [
+[[1mdaisy[0m][[1;34mDEBUG[0m ]     "daisy"
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   ], 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "quorum": [], 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "rank": 0, 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "state": "probing", 
+[[1mdaisy[0m][[1;34mDEBUG[0m ]   "sync_provider": []
+[[1mdaisy[0m][[1;34mDEBUG[0m ] }
+[[1mdaisy[0m][[1;34mDEBUG[0m ] ********************************************************************************
+[[1mdaisy[0m][[1;37mINFO[0m  ] monitor: mon.daisy is running
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph --admin-daemon /var/run/ceph/ceph-mon.daisy.asok mon_status
+[[1mceph_deploy.mon[0m][[1;34mDEBUG[0m ] detecting platform for host eric ...
+[[1meric[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1meric[0m][[1;34mDEBUG[0m ] connected to host: eric 
+[[1meric[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1meric[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.mon[0m][[1;37mINFO[0m  ] distro info: Ubuntu 12.04 precise
+[[1meric[0m][[1;34mDEBUG[0m ] determining if provided host has same hostname in remote
+[[1meric[0m][[1;34mDEBUG[0m ] get remote short hostname
+[[1meric[0m][[1;34mDEBUG[0m ] deploying mon to eric
+[[1meric[0m][[1;34mDEBUG[0m ] get remote short hostname
+[[1meric[0m][[1;34mDEBUG[0m ] remote hostname: eric
+[[1meric[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1meric[0m][[1;34mDEBUG[0m ] create the mon path if it does not exist
+[[1meric[0m][[1;34mDEBUG[0m ] checking for done path: /var/lib/ceph/mon/ceph-eric/done
+[[1meric[0m][[1;34mDEBUG[0m ] done path does not exist: /var/lib/ceph/mon/ceph-eric/done
+[[1meric[0m][[1;37mINFO[0m  ] creating keyring file: /var/lib/ceph/tmp/ceph-eric.mon.keyring
+[[1meric[0m][[1;34mDEBUG[0m ] create the monitor keyring file
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo ceph-mon --cluster ceph --mkfs -i eric --keyring /var/lib/ceph/tmp/ceph-eric.mon.keyring
+[[1meric[0m][[1;34mDEBUG[0m ] ceph-mon: mon.noname-b 192.168.122.115:6789/0 is local, renaming to mon.eric
+[[1meric[0m][[1;34mDEBUG[0m ] ceph-mon: set fsid to c22aecc1-4066-4a49-b2ac-2e1c591b1d37
+[[1meric[0m][[1;34mDEBUG[0m ] ceph-mon: created monfs at /var/lib/ceph/mon/ceph-eric for mon.eric
+[[1meric[0m][[1;37mINFO[0m  ] unlinking keyring file /var/lib/ceph/tmp/ceph-eric.mon.keyring
+[[1meric[0m][[1;34mDEBUG[0m ] create a done file to avoid re-doing the mon deployment
+[[1meric[0m][[1;34mDEBUG[0m ] create the init path if it does not exist
+[[1meric[0m][[1;34mDEBUG[0m ] locating the `service` executable...
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo initctl emit ceph-mon cluster=ceph id=eric
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph --admin-daemon /var/run/ceph/ceph-mon.eric.asok mon_status
+[[1meric[0m][[1;34mDEBUG[0m ] ********************************************************************************
+[[1meric[0m][[1;34mDEBUG[0m ] status for monitor: mon.eric
+[[1meric[0m][[1;34mDEBUG[0m ] {
+[[1meric[0m][[1;34mDEBUG[0m ]   "election_epoch": 1, 
+[[1meric[0m][[1;34mDEBUG[0m ]   "extra_probe_peers": [
+[[1meric[0m][[1;34mDEBUG[0m ]     "192.168.122.114:6789/0", 
+[[1meric[0m][[1;34mDEBUG[0m ]     "192.168.122.116:6789/0"
+[[1meric[0m][[1;34mDEBUG[0m ]   ], 
+[[1meric[0m][[1;34mDEBUG[0m ]   "monmap": {
+[[1meric[0m][[1;34mDEBUG[0m ]     "created": "0.000000", 
+[[1meric[0m][[1;34mDEBUG[0m ]     "epoch": 0, 
+[[1meric[0m][[1;34mDEBUG[0m ]     "fsid": "c22aecc1-4066-4a49-b2ac-2e1c591b1d37", 
+[[1meric[0m][[1;34mDEBUG[0m ]     "modified": "0.000000", 
+[[1meric[0m][[1;34mDEBUG[0m ]     "mons": [
+[[1meric[0m][[1;34mDEBUG[0m ]       {
+[[1meric[0m][[1;34mDEBUG[0m ]         "addr": "192.168.122.114:6789/0", 
+[[1meric[0m][[1;34mDEBUG[0m ]         "name": "daisy", 
+[[1meric[0m][[1;34mDEBUG[0m ]         "rank": 0
+[[1meric[0m][[1;34mDEBUG[0m ]       }, 
+[[1meric[0m][[1;34mDEBUG[0m ]       {
+[[1meric[0m][[1;34mDEBUG[0m ]         "addr": "192.168.122.115:6789/0", 
+[[1meric[0m][[1;34mDEBUG[0m ]         "name": "eric", 
+[[1meric[0m][[1;34mDEBUG[0m ]         "rank": 1
+[[1meric[0m][[1;34mDEBUG[0m ]       }, 
+[[1meric[0m][[1;34mDEBUG[0m ]       {
+[[1meric[0m][[1;34mDEBUG[0m ]         "addr": "0.0.0.0:0/2", 
+[[1meric[0m][[1;34mDEBUG[0m ]         "name": "frank", 
+[[1meric[0m][[1;34mDEBUG[0m ]         "rank": 2
+[[1meric[0m][[1;34mDEBUG[0m ]       }
+[[1meric[0m][[1;34mDEBUG[0m ]     ]
+[[1meric[0m][[1;34mDEBUG[0m ]   }, 
+[[1meric[0m][[1;34mDEBUG[0m ]   "name": "eric", 
+[[1meric[0m][[1;34mDEBUG[0m ]   "outside_quorum": [], 
+[[1meric[0m][[1;34mDEBUG[0m ]   "quorum": [], 
+[[1meric[0m][[1;34mDEBUG[0m ]   "rank": 1, 
+[[1meric[0m][[1;34mDEBUG[0m ]   "state": "electing", 
+[[1meric[0m][[1;34mDEBUG[0m ]   "sync_provider": []
+[[1meric[0m][[1;34mDEBUG[0m ] }
+[[1meric[0m][[1;34mDEBUG[0m ] ********************************************************************************
+[[1meric[0m][[1;37mINFO[0m  ] monitor: mon.eric is running
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph --admin-daemon /var/run/ceph/ceph-mon.eric.asok mon_status
+[[1mceph_deploy.mon[0m][[1;34mDEBUG[0m ] detecting platform for host frank ...
+[[1mfrank[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mfrank[0m][[1;34mDEBUG[0m ] connected to host: frank 
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.mon[0m][[1;37mINFO[0m  ] distro info: Ubuntu 12.04 precise
+[[1mfrank[0m][[1;34mDEBUG[0m ] determining if provided host has same hostname in remote
+[[1mfrank[0m][[1;34mDEBUG[0m ] get remote short hostname
+[[1mfrank[0m][[1;34mDEBUG[0m ] deploying mon to frank
+[[1mfrank[0m][[1;34mDEBUG[0m ] get remote short hostname
+[[1mfrank[0m][[1;34mDEBUG[0m ] remote hostname: frank
+[[1mfrank[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1mfrank[0m][[1;34mDEBUG[0m ] create the mon path if it does not exist
+[[1mfrank[0m][[1;34mDEBUG[0m ] checking for done path: /var/lib/ceph/mon/ceph-frank/done
+[[1mfrank[0m][[1;34mDEBUG[0m ] done path does not exist: /var/lib/ceph/mon/ceph-frank/done
+[[1mfrank[0m][[1;37mINFO[0m  ] creating keyring file: /var/lib/ceph/tmp/ceph-frank.mon.keyring
+[[1mfrank[0m][[1;34mDEBUG[0m ] create the monitor keyring file
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo ceph-mon --cluster ceph --mkfs -i frank --keyring /var/lib/ceph/tmp/ceph-frank.mon.keyring
+[[1mfrank[0m][[1;34mDEBUG[0m ] ceph-mon: mon.noname-c 192.168.122.116:6789/0 is local, renaming to mon.frank
+[[1mfrank[0m][[1;34mDEBUG[0m ] ceph-mon: set fsid to c22aecc1-4066-4a49-b2ac-2e1c591b1d37
+[[1mfrank[0m][[1;34mDEBUG[0m ] ceph-mon: created monfs at /var/lib/ceph/mon/ceph-frank for mon.frank
+[[1mfrank[0m][[1;37mINFO[0m  ] unlinking keyring file /var/lib/ceph/tmp/ceph-frank.mon.keyring
+[[1mfrank[0m][[1;34mDEBUG[0m ] create a done file to avoid re-doing the mon deployment
+[[1mfrank[0m][[1;34mDEBUG[0m ] create the init path if it does not exist
+[[1mfrank[0m][[1;34mDEBUG[0m ] locating the `service` executable...
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo initctl emit ceph-mon cluster=ceph id=frank
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph --admin-daemon /var/run/ceph/ceph-mon.frank.asok mon_status
+[[1mfrank[0m][[1;34mDEBUG[0m ] ********************************************************************************
+[[1mfrank[0m][[1;34mDEBUG[0m ] status for monitor: mon.frank
+[[1mfrank[0m][[1;34mDEBUG[0m ] {
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "election_epoch": 1, 
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "extra_probe_peers": [
+[[1mfrank[0m][[1;34mDEBUG[0m ]     "192.168.122.114:6789/0", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]     "192.168.122.115:6789/0"
+[[1mfrank[0m][[1;34mDEBUG[0m ]   ], 
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "monmap": {
+[[1mfrank[0m][[1;34mDEBUG[0m ]     "created": "0.000000", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]     "epoch": 0, 
+[[1mfrank[0m][[1;34mDEBUG[0m ]     "fsid": "c22aecc1-4066-4a49-b2ac-2e1c591b1d37", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]     "modified": "0.000000", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]     "mons": [
+[[1mfrank[0m][[1;34mDEBUG[0m ]       {
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "addr": "192.168.122.114:6789/0", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "name": "daisy", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "rank": 0
+[[1mfrank[0m][[1;34mDEBUG[0m ]       }, 
+[[1mfrank[0m][[1;34mDEBUG[0m ]       {
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "addr": "192.168.122.115:6789/0", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "name": "eric", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "rank": 1
+[[1mfrank[0m][[1;34mDEBUG[0m ]       }, 
+[[1mfrank[0m][[1;34mDEBUG[0m ]       {
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "addr": "192.168.122.116:6789/0", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "name": "frank", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]         "rank": 2
+[[1mfrank[0m][[1;34mDEBUG[0m ]       }
+[[1mfrank[0m][[1;34mDEBUG[0m ]     ]
+[[1mfrank[0m][[1;34mDEBUG[0m ]   }, 
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "name": "frank", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "outside_quorum": [], 
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "quorum": [], 
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "rank": 2, 
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "state": "electing", 
+[[1mfrank[0m][[1;34mDEBUG[0m ]   "sync_provider": []
+[[1mfrank[0m][[1;34mDEBUG[0m ] }
+[[1mfrank[0m][[1;34mDEBUG[0m ] ********************************************************************************
+[[1mfrank[0m][[1;37mINFO[0m  ] monitor: mon.frank is running
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph --admin-daemon /var/run/ceph/ceph-mon.frank.asok mon_status
+]0;vagrant@alice: ~vagrant@alice:~$ [Ksudo mkdir -p /etc/ceph
+]0;vagrant@alice: ~vagrant@alice:~$ [Ksudo cp -v ceph* /etc/ceph
+`ceph-deploy' -> `/etc/ceph/ceph-deploy'
+`ceph-deploy.timingfile' -> `/etc/ceph/ceph-deploy.timingfile'
+`ceph.conf' -> `/etc/ceph/ceph.conf'
+`ceph.log' -> `/etc/ceph/ceph.log'
+`ceph.mon.keyring' -> `/etc/ceph/ceph.mon.keyring'
+]0;vagrant@alice: ~vagrant@alice:~$ [Kceph-deploy gatherkeys daisy
+[[1mceph_deploy.conf[0m][[1;34mDEBUG[0m ] found configuration file at: /home/vagrant/.cephdeploy.conf
+[[1mceph_deploy.cli[0m][[1;37mINFO[0m  ] Invoked (1.5.19): /usr/bin/ceph-deploy gatherkeys daisy
+[[1mceph_deploy.gatherkeys[0m][[1;34mDEBUG[0m ] Checking daisy for /etc/ceph/ceph.client.admin.keyring
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: daisy 
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mdaisy[0m][[1;34mDEBUG[0m ] fetch remote file
+[[1mceph_deploy.gatherkeys[0m][[1;34mDEBUG[0m ] Got ceph.client.admin.keyring key from daisy.
+[[1mceph_deploy.gatherkeys[0m][[1;34mDEBUG[0m ] Have ceph.mon.keyring
+[[1mceph_deploy.gatherkeys[0m][[1;34mDEBUG[0m ] Checking daisy for /var/lib/ceph/bootstrap-osd/ceph.keyring
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: daisy 
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mdaisy[0m][[1;34mDEBUG[0m ] fetch remote file
+[[1mceph_deploy.gatherkeys[0m][[1;34mDEBUG[0m ] Got ceph.bootstrap-osd.keyring key from daisy.
+[[1mceph_deploy.gatherkeys[0m][[1;34mDEBUG[0m ] Checking daisy for /var/lib/ceph/bootstrap-mds/ceph.keyring
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: daisy 
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mdaisy[0m][[1;34mDEBUG[0m ] fetch remote file
+[[1mceph_deploy.gatherkeys[0m][[1;34mDEBUG[0m ] Got ceph.bootstrap-mds.keyring key from daisy.
+]0;vagrant@alice: ~vagrant@alice:~$ [Kcp cli   ceph-deploy              ls
+ceph-deploy                 ceph.bootstrap-osd.keyring  ceph.log
+ceph-deploy.timingfile      ceph.client.admin.keyring   ceph.mon.keyring
+ceph.bootstrap-mds.keyring  ceph.conf
+]0;vagrant@alice: ~vagrant@alice:~$ cp ceph.client.admin.keyring /etc/ceph/
+cp: cannot create regular file `/etc/ceph/ceph.client.admin.keyring': Permission denied
+]0;vagrant@alice: ~vagrant@alice:~$ [Kcp ceph.client.admin.keyring /etc/ceph/^[OH  [K [1@s[1@u[1@d[1@o[1@ 
+]0;vagrant@alice: ~vagrant@alice:~$ [Kc sudo ceph -s
+    cluster c22aecc1-4066-4a49-b2ac-2e1c591b1d37
+     health HEALTH_ERR 192 pgs stuck inactive; 192 pgs stuck unclean; no osds
+     monmap e1: 3 mons at {daisy=192.168.122.114:6789/0,eric=192.168.122.115:6789/0,frank=192.168.122.116:6789/0}, election epoch 8, quorum 0,1,2 daisy,eric,frank
+     osdmap e1: 0 osds: 0 up, 0 in
+      pgmap v2: 192 pgs, 3 pools, 0 bytes data, 0 objects
+            0 kB used, 0 kB / 0 kB avail
+                 192 creating
+]0;vagrant@alice: ~vagrant@alice:~$ ceph-deploy osd create {daisy,eric,frank}:{vda,vdb}
+[[1mceph_deploy.conf[0m][[1;34mDEBUG[0m ] found configuration file at: /home/vagrant/.cephdeploy.conf
+[[1mceph_deploy.cli[0m][[1;37mINFO[0m  ] Invoked (1.5.19): /usr/bin/ceph-deploy osd create daisy:vda daisy:vdb eric:vda eric:vdb frank:vda frank:vdb
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Preparing cluster ceph disks daisy:/dev/vda: daisy:/dev/vdb: eric:/dev/vda: eric:/dev/vdb: frank:/dev/vda: frank:/dev/vdb:
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: daisy 
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.osd[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Deploying osd to daisy
+[[1mdaisy[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Preparing host daisy disk /dev/vda journal None activate True
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo ceph-disk -v prepare --fs-type xfs --cluster ceph -- /dev/vda
+[[1mdaisy[0m][[1;34mDEBUG[0m ] Creating new GPT entries.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 34 to 2048 in
+[[1mdaisy[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 10485761 to 10487808 in
+[[1mdaisy[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] meta-data=/dev/vda1              isize=2048   agcount=4, agsize=982975 blks
+[[1mdaisy[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   attr=2, projid32bit=0
+[[1mdaisy[0m][[1;34mDEBUG[0m ] data     =                       bsize=4096   blocks=3931899, imaxpct=25
+[[1mdaisy[0m][[1;34mDEBUG[0m ]          =                       sunit=0      swidth=0 blks
+[[1mdaisy[0m][[1;34mDEBUG[0m ] naming   =version 2              bsize=4096   ascii-ci=0
+[[1mdaisy[0m][[1;34mDEBUG[0m ] log      =internal log           bsize=4096   blocks=2560, version=2
+[[1mdaisy[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   sunit=0 blks, lazy-count=1
+[[1mdaisy[0m][[1;34mDEBUG[0m ] realtime =none                   extsz=4096   blocks=0, rtextents=0
+[[1mdaisy[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mkfs_options_xfs
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mkfs_options_xfs
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=osd_journal_size
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Will colocate journal with data on /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating journal partition num 2 size 5120 on /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --new=2:0:5120M --change-name=2:ceph journal --partition-guid=2:92c2a5e3-e2ee-451d-94de-9c67de45ed35 --typecode=2:45b0969e-9b03-4f30-b4c6-b4b80ceff106 --mbrtogpt -- /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Journal is GPT partition /dev/disk/by-partuuid/92c2a5e3-e2ee-451d-94de-9c67de45ed35
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating osd partition on /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --largest-new=1 --change-name=1:ceph data --partition-guid=1:594e1075-ecdb-4446-9dcd-f997f0809463 --typecode=1:89c57f98-2fe5-4dc0-89c1-f3ad0ceff2be -- /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating xfs fs on /dev/vda1
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/mkfs -t xfs -f -i size=2048 -- /dev/vda1
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Mounting /dev/vda1 on /var/lib/ceph/tmp/mnt.2gs6Vz with options noatime
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/mount -t xfs -o noatime -- /dev/vda1 /var/lib/ceph/tmp/mnt.2gs6Vz
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Preparing osd data dir /var/lib/ceph/tmp/mnt.2gs6Vz
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating symlink /var/lib/ceph/tmp/mnt.2gs6Vz/journal -> /dev/disk/by-partuuid/92c2a5e3-e2ee-451d-94de-9c67de45ed35
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Unmounting /var/lib/ceph/tmp/mnt.2gs6Vz
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.2gs6Vz
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --typecode=1:4fbd7e29-9d25-41b8-afd0-062c0ceff05d -- /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vda
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1mdaisy[0m][[1;37mINFO[0m  ] checking OSD status...
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph osd stat --format=json
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Host daisy is now ready for osd use.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: daisy 
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.osd[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Preparing host daisy disk /dev/vdb journal None activate True
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo ceph-disk -v prepare --fs-type xfs --cluster ceph -- /dev/vdb
+[[1mdaisy[0m][[1;34mDEBUG[0m ] Creating new GPT entries.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 34 to 2048 in
+[[1mdaisy[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 10485761 to 10487808 in
+[[1mdaisy[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mdaisy[0m][[1;34mDEBUG[0m ] meta-data=/dev/vdb1              isize=2048   agcount=4, agsize=982975 blks
+[[1mdaisy[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   attr=2, projid32bit=0
+[[1mdaisy[0m][[1;34mDEBUG[0m ] data     =                       bsize=4096   blocks=3931899, imaxpct=25
+[[1mdaisy[0m][[1;34mDEBUG[0m ]          =                       sunit=0      swidth=0 blks
+[[1mdaisy[0m][[1;34mDEBUG[0m ] naming   =version 2              bsize=4096   ascii-ci=0
+[[1mdaisy[0m][[1;34mDEBUG[0m ] log      =internal log           bsize=4096   blocks=2560, version=2
+[[1mdaisy[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   sunit=0 blks, lazy-count=1
+[[1mdaisy[0m][[1;34mDEBUG[0m ] realtime =none                   extsz=4096   blocks=0, rtextents=0
+[[1mdaisy[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mkfs_options_xfs
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mkfs_options_xfs
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=osd_journal_size
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Will colocate journal with data on /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating journal partition num 2 size 5120 on /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --new=2:0:5120M --change-name=2:ceph journal --partition-guid=2:0cafbd61-63d9-42cc-a95c-faf073b138ef --typecode=2:45b0969e-9b03-4f30-b4c6-b4b80ceff106 --mbrtogpt -- /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Journal is GPT partition /dev/disk/by-partuuid/0cafbd61-63d9-42cc-a95c-faf073b138ef
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating osd partition on /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --largest-new=1 --change-name=1:ceph data --partition-guid=1:474c9230-720d-4e58-89f7-d10fb70af32c --typecode=1:89c57f98-2fe5-4dc0-89c1-f3ad0ceff2be -- /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating xfs fs on /dev/vdb1
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/mkfs -t xfs -f -i size=2048 -- /dev/vdb1
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Mounting /dev/vdb1 on /var/lib/ceph/tmp/mnt.c1sR4Y with options noatime
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/mount -t xfs -o noatime -- /dev/vdb1 /var/lib/ceph/tmp/mnt.c1sR4Y
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Preparing osd data dir /var/lib/ceph/tmp/mnt.c1sR4Y
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating symlink /var/lib/ceph/tmp/mnt.c1sR4Y/journal -> /dev/disk/by-partuuid/0cafbd61-63d9-42cc-a95c-faf073b138ef
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Unmounting /var/lib/ceph/tmp/mnt.c1sR4Y
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.c1sR4Y
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --typecode=1:4fbd7e29-9d25-41b8-afd0-062c0ceff05d -- /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vdb
+[[1mdaisy[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1mdaisy[0m][[1;37mINFO[0m  ] checking OSD status...
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph osd stat --format=json
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Host daisy is now ready for osd use.
+[[1meric[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1meric[0m][[1;34mDEBUG[0m ] connected to host: eric 
+[[1meric[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1meric[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.osd[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Deploying osd to eric
+[[1meric[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Preparing host eric disk /dev/vda journal None activate True
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo ceph-disk -v prepare --fs-type xfs --cluster ceph -- /dev/vda
+[[1meric[0m][[1;34mDEBUG[0m ] Creating new GPT entries.
+[[1meric[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 34 to 2048 in
+[[1meric[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1meric[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1meric[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 10485761 to 10487808 in
+[[1meric[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1meric[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1meric[0m][[1;34mDEBUG[0m ] meta-data=/dev/vda1              isize=2048   agcount=4, agsize=982975 blks
+[[1meric[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   attr=2, projid32bit=0
+[[1meric[0m][[1;34mDEBUG[0m ] data     =                       bsize=4096   blocks=3931899, imaxpct=25
+[[1meric[0m][[1;34mDEBUG[0m ]          =                       sunit=0      swidth=0 blks
+[[1meric[0m][[1;34mDEBUG[0m ] naming   =version 2              bsize=4096   ascii-ci=0
+[[1meric[0m][[1;34mDEBUG[0m ] log      =internal log           bsize=4096   blocks=2560, version=2
+[[1meric[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   sunit=0 blks, lazy-count=1
+[[1meric[0m][[1;34mDEBUG[0m ] realtime =none                   extsz=4096   blocks=0, rtextents=0
+[[1meric[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mkfs_options_xfs
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mkfs_options_xfs
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=osd_journal_size
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Will colocate journal with data on /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating journal partition num 2 size 5120 on /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --new=2:0:5120M --change-name=2:ceph journal --partition-guid=2:16eb10da-a79e-428b-b4e3-d85b68323ac6 --typecode=2:45b0969e-9b03-4f30-b4c6-b4b80ceff106 --mbrtogpt -- /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Journal is GPT partition /dev/disk/by-partuuid/16eb10da-a79e-428b-b4e3-d85b68323ac6
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating osd partition on /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --largest-new=1 --change-name=1:ceph data --partition-guid=1:d416e087-7c59-4288-9396-5c67de3cd595 --typecode=1:89c57f98-2fe5-4dc0-89c1-f3ad0ceff2be -- /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating xfs fs on /dev/vda1
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/mkfs -t xfs -f -i size=2048 -- /dev/vda1
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Mounting /dev/vda1 on /var/lib/ceph/tmp/mnt.tnrDJ7 with options noatime
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/mount -t xfs -o noatime -- /dev/vda1 /var/lib/ceph/tmp/mnt.tnrDJ7
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Preparing osd data dir /var/lib/ceph/tmp/mnt.tnrDJ7
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating symlink /var/lib/ceph/tmp/mnt.tnrDJ7/journal -> /dev/disk/by-partuuid/16eb10da-a79e-428b-b4e3-d85b68323ac6
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Unmounting /var/lib/ceph/tmp/mnt.tnrDJ7
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.tnrDJ7
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --typecode=1:4fbd7e29-9d25-41b8-afd0-062c0ceff05d -- /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vda
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1meric[0m][[1;37mINFO[0m  ] checking OSD status...
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph osd stat --format=json
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Host eric is now ready for osd use.
+[[1meric[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1meric[0m][[1;34mDEBUG[0m ] connected to host: eric 
+[[1meric[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1meric[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.osd[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Preparing host eric disk /dev/vdb journal None activate True
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo ceph-disk -v prepare --fs-type xfs --cluster ceph -- /dev/vdb
+[[1meric[0m][[1;34mDEBUG[0m ] Creating new GPT entries.
+[[1meric[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 34 to 2048 in
+[[1meric[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1meric[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1meric[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 10485761 to 10487808 in
+[[1meric[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1meric[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1meric[0m][[1;34mDEBUG[0m ] meta-data=/dev/vdb1              isize=2048   agcount=4, agsize=982975 blks
+[[1meric[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   attr=2, projid32bit=0
+[[1meric[0m][[1;34mDEBUG[0m ] data     =                       bsize=4096   blocks=3931899, imaxpct=25
+[[1meric[0m][[1;34mDEBUG[0m ]          =                       sunit=0      swidth=0 blks
+[[1meric[0m][[1;34mDEBUG[0m ] naming   =version 2              bsize=4096   ascii-ci=0
+[[1meric[0m][[1;34mDEBUG[0m ] log      =internal log           bsize=4096   blocks=2560, version=2
+[[1meric[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   sunit=0 blks, lazy-count=1
+[[1meric[0m][[1;34mDEBUG[0m ] realtime =none                   extsz=4096   blocks=0, rtextents=0
+[[1meric[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mkfs_options_xfs
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mkfs_options_xfs
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=osd_journal_size
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Will colocate journal with data on /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating journal partition num 2 size 5120 on /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --new=2:0:5120M --change-name=2:ceph journal --partition-guid=2:bf316328-2c0a-453b-b625-f0e421bfd0ad --typecode=2:45b0969e-9b03-4f30-b4c6-b4b80ceff106 --mbrtogpt -- /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Journal is GPT partition /dev/disk/by-partuuid/bf316328-2c0a-453b-b625-f0e421bfd0ad
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating osd partition on /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --largest-new=1 --change-name=1:ceph data --partition-guid=1:0e4e1d96-c209-4249-a881-4ca13c8755f9 --typecode=1:89c57f98-2fe5-4dc0-89c1-f3ad0ceff2be -- /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating xfs fs on /dev/vdb1
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/mkfs -t xfs -f -i size=2048 -- /dev/vdb1
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Mounting /dev/vdb1 on /var/lib/ceph/tmp/mnt.26t8jX with options noatime
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/mount -t xfs -o noatime -- /dev/vdb1 /var/lib/ceph/tmp/mnt.26t8jX
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Preparing osd data dir /var/lib/ceph/tmp/mnt.26t8jX
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating symlink /var/lib/ceph/tmp/mnt.26t8jX/journal -> /dev/disk/by-partuuid/bf316328-2c0a-453b-b625-f0e421bfd0ad
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Unmounting /var/lib/ceph/tmp/mnt.26t8jX
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.26t8jX
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --typecode=1:4fbd7e29-9d25-41b8-afd0-062c0ceff05d -- /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vdb
+[[1meric[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1meric[0m][[1;37mINFO[0m  ] checking OSD status...
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph osd stat --format=json
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Host eric is now ready for osd use.
+[[1mfrank[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mfrank[0m][[1;34mDEBUG[0m ] connected to host: frank 
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.osd[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Deploying osd to frank
+[[1mfrank[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Preparing host frank disk /dev/vda journal None activate True
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo ceph-disk -v prepare --fs-type xfs --cluster ceph -- /dev/vda
+[[1mfrank[0m][[1;34mDEBUG[0m ] Creating new GPT entries.
+[[1mfrank[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 34 to 2048 in
+[[1mfrank[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1mfrank[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mfrank[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 10485761 to 10487808 in
+[[1mfrank[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1mfrank[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mfrank[0m][[1;34mDEBUG[0m ] meta-data=/dev/vda1              isize=2048   agcount=4, agsize=982975 blks
+[[1mfrank[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   attr=2, projid32bit=0
+[[1mfrank[0m][[1;34mDEBUG[0m ] data     =                       bsize=4096   blocks=3931899, imaxpct=25
+[[1mfrank[0m][[1;34mDEBUG[0m ]          =                       sunit=0      swidth=0 blks
+[[1mfrank[0m][[1;34mDEBUG[0m ] naming   =version 2              bsize=4096   ascii-ci=0
+[[1mfrank[0m][[1;34mDEBUG[0m ] log      =internal log           bsize=4096   blocks=2560, version=2
+[[1mfrank[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   sunit=0 blks, lazy-count=1
+[[1mfrank[0m][[1;34mDEBUG[0m ] realtime =none                   extsz=4096   blocks=0, rtextents=0
+[[1mfrank[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mkfs_options_xfs
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mkfs_options_xfs
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=osd_journal_size
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Will colocate journal with data on /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating journal partition num 2 size 5120 on /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --new=2:0:5120M --change-name=2:ceph journal --partition-guid=2:4980e7fc-9942-4d60-a0ac-88920f17b2bc --typecode=2:45b0969e-9b03-4f30-b4c6-b4b80ceff106 --mbrtogpt -- /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Journal is GPT partition /dev/disk/by-partuuid/4980e7fc-9942-4d60-a0ac-88920f17b2bc
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating osd partition on /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --largest-new=1 --change-name=1:ceph data --partition-guid=1:1468a2ed-0b59-4d78-b52a-cbea0ceb703a --typecode=1:89c57f98-2fe5-4dc0-89c1-f3ad0ceff2be -- /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating xfs fs on /dev/vda1
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/mkfs -t xfs -f -i size=2048 -- /dev/vda1
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Mounting /dev/vda1 on /var/lib/ceph/tmp/mnt.Y5NuJy with options noatime
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/mount -t xfs -o noatime -- /dev/vda1 /var/lib/ceph/tmp/mnt.Y5NuJy
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Preparing osd data dir /var/lib/ceph/tmp/mnt.Y5NuJy
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating symlink /var/lib/ceph/tmp/mnt.Y5NuJy/journal -> /dev/disk/by-partuuid/4980e7fc-9942-4d60-a0ac-88920f17b2bc
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Unmounting /var/lib/ceph/tmp/mnt.Y5NuJy
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.Y5NuJy
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --typecode=1:4fbd7e29-9d25-41b8-afd0-062c0ceff05d -- /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vda
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vda
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1mfrank[0m][[1;37mINFO[0m  ] checking OSD status...
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph osd stat --format=json
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Host frank is now ready for osd use.
+[[1mfrank[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mfrank[0m][[1;34mDEBUG[0m ] connected to host: frank 
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.osd[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Preparing host frank disk /dev/vdb journal None activate True
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo ceph-disk -v prepare --fs-type xfs --cluster ceph -- /dev/vdb
+[[1mfrank[0m][[1;34mDEBUG[0m ] Creating new GPT entries.
+[[1mfrank[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 34 to 2048 in
+[[1mfrank[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1mfrank[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mfrank[0m][[1;34mDEBUG[0m ] Information: Moved requested sector from 10485761 to 10487808 in
+[[1mfrank[0m][[1;34mDEBUG[0m ] order to align on 2048-sector boundaries.
+[[1mfrank[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mfrank[0m][[1;34mDEBUG[0m ] meta-data=/dev/vdb1              isize=2048   agcount=4, agsize=982975 blks
+[[1mfrank[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   attr=2, projid32bit=0
+[[1mfrank[0m][[1;34mDEBUG[0m ] data     =                       bsize=4096   blocks=3931899, imaxpct=25
+[[1mfrank[0m][[1;34mDEBUG[0m ]          =                       sunit=0      swidth=0 blks
+[[1mfrank[0m][[1;34mDEBUG[0m ] naming   =version 2              bsize=4096   ascii-ci=0
+[[1mfrank[0m][[1;34mDEBUG[0m ] log      =internal log           bsize=4096   blocks=2560, version=2
+[[1mfrank[0m][[1;34mDEBUG[0m ]          =                       sectsz=512   sunit=0 blks, lazy-count=1
+[[1mfrank[0m][[1;34mDEBUG[0m ] realtime =none                   extsz=4096   blocks=0, rtextents=0
+[[1mfrank[0m][[1;34mDEBUG[0m ] The operation has completed successfully.
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=fsid
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mkfs_options_xfs
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mkfs_options_xfs
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /usr/bin/ceph-osd --cluster=ceph --show-config-value=osd_journal_size
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Will colocate journal with data on /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating journal partition num 2 size 5120 on /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --new=2:0:5120M --change-name=2:ceph journal --partition-guid=2:499da34c-1f7d-4611-9f99-0e29e8aa9a61 --typecode=2:45b0969e-9b03-4f30-b4c6-b4b80ceff106 --mbrtogpt -- /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Journal is GPT partition /dev/disk/by-partuuid/499da34c-1f7d-4611-9f99-0e29e8aa9a61
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating osd partition on /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --largest-new=1 --change-name=1:ceph data --partition-guid=1:880ec276-1b27-45f7-8c46-191327ccab5c --typecode=1:89c57f98-2fe5-4dc0-89c1-f3ad0ceff2be -- /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/udevadm settle
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating xfs fs on /dev/vdb1
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/mkfs -t xfs -f -i size=2048 -- /dev/vdb1
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Mounting /dev/vdb1 on /var/lib/ceph/tmp/mnt.TRsRyC with options noatime
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/mount -t xfs -o noatime -- /dev/vdb1 /var/lib/ceph/tmp/mnt.TRsRyC
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Preparing osd data dir /var/lib/ceph/tmp/mnt.TRsRyC
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Creating symlink /var/lib/ceph/tmp/mnt.TRsRyC/journal -> /dev/disk/by-partuuid/499da34c-1f7d-4611-9f99-0e29e8aa9a61
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Unmounting /var/lib/ceph/tmp/mnt.TRsRyC
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.TRsRyC
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/sgdisk --typecode=1:4fbd7e29-9d25-41b8-afd0-062c0ceff05d -- /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] DEBUG:ceph-disk:Calling partprobe on prepared device /dev/vdb
+[[1mfrank[0m][[1;33mWARNIN[0m] INFO:ceph-disk:Running command: /sbin/partprobe /dev/vdb
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo udevadm trigger --subsystem-match=block --action=add
+[[1mfrank[0m][[1;37mINFO[0m  ] checking OSD status...
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster=ceph osd stat --format=json
+[[1mceph_deploy.osd[0m][[1;34mDEBUG[0m ] Host frank is now ready for osd use.
+]0;vagrant@alice: ~vagrant@alice:~$ [Kceph-deploy mds create daisy eric frankceph-deploy mds create daisy eric fr ank^C
+]0;vagrant@alice: ~vagrant@alice:~$ [Kceph-deploy mds create daisy eric frank
+[[1mceph_deploy.conf[0m][[1;34mDEBUG[0m ] found configuration file at: /home/vagrant/.cephdeploy.conf
+[[1mceph_deploy.cli[0m][[1;37mINFO[0m  ] Invoked (1.5.19): /usr/bin/ceph-deploy mds create daisy eric frank
+[[1mceph_deploy.mds[0m][[1;34mDEBUG[0m ] Deploying mds, cluster ceph hosts daisy:daisy eric:eric frank:frank
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mdaisy[0m][[1;34mDEBUG[0m ] connected to host: daisy 
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mdaisy[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.mds[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.mds[0m][[1;34mDEBUG[0m ] remote host will use upstart
+[[1mceph_deploy.mds[0m][[1;34mDEBUG[0m ] deploying mds bootstrap to daisy
+[[1mdaisy[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1mdaisy[0m][[1;34mDEBUG[0m ] create path if it doesn't exist
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster ceph --name client.bootstrap-mds --keyring /var/lib/ceph/bootstrap-mds/ceph.keyring auth get-or-create mds.daisy osd allow rwx mds allow mon allow profile mds -o /var/lib/ceph/mds/ceph-daisy/keyring
+[[1mdaisy[0m][[1;37mINFO[0m  ] Running command: sudo initctl emit ceph-mds cluster=ceph id=daisy
+[[1meric[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1meric[0m][[1;34mDEBUG[0m ] connected to host: eric 
+[[1meric[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1meric[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.mds[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.mds[0m][[1;34mDEBUG[0m ] remote host will use upstart
+[[1mceph_deploy.mds[0m][[1;34mDEBUG[0m ] deploying mds bootstrap to eric
+[[1meric[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1meric[0m][[1;34mDEBUG[0m ] create path if it doesn't exist
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster ceph --name client.bootstrap-mds --keyring /var/lib/ceph/bootstrap-mds/ceph.keyring auth get-or-create mds.eric osd allow rwx mds allow mon allow profile mds -o /var/lib/ceph/mds/ceph-eric/keyring
+[[1meric[0m][[1;37mINFO[0m  ] Running command: sudo initctl emit ceph-mds cluster=ceph id=eric
+[[1mfrank[0m][[1;34mDEBUG[0m ] connection detected need for sudo
+[[1mfrank[0m][[1;34mDEBUG[0m ] connected to host: frank 
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect platform information from remote host
+[[1mfrank[0m][[1;34mDEBUG[0m ] detect machine type
+[[1mceph_deploy.mds[0m][[1;37mINFO[0m  ] Distro info: Ubuntu 12.04 precise
+[[1mceph_deploy.mds[0m][[1;34mDEBUG[0m ] remote host will use upstart
+[[1mceph_deploy.mds[0m][[1;34mDEBUG[0m ] deploying mds bootstrap to frank
+[[1mfrank[0m][[1;34mDEBUG[0m ] write cluster configuration to /etc/ceph/{cluster}.conf
+[[1mfrank[0m][[1;34mDEBUG[0m ] create path if it doesn't exist
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo ceph --cluster ceph --name client.bootstrap-mds --keyring /var/lib/ceph/bootstrap-mds/ceph.keyring auth get-or-create mds.frank osd allow rwx mds allow mon allow profile mds -o /var/lib/ceph/mds/ceph-frank/keyring
+[[1mfrank[0m][[1;37mINFO[0m  ] Running command: sudo initctl emit ceph-mds cluster=ceph id=frank
+]0;vagrant@alice: ~vagrant@alice:~$ [Ksudo ceph -s
+    cluster c22aecc1-4066-4a49-b2ac-2e1c591b1d37
+     health HEALTH_WARN 30 pgs peering; 28 pgs stuck inactive; 47 pgs stuck unclean
+     monmap e1: 3 mons at {daisy=192.168.122.114:6789/0,eric=192.168.122.115:6789/0,frank=192.168.122.116:6789/0}, election epoch 8, quorum 0,1,2 daisy,eric,frank
+     mdsmap e5: 1/1/1 up {0=daisy=up:creating}, 2 up:standby
+     osdmap e40: 6 osds: 6 up, 6 in
+      pgmap v66: 192 pgs, 3 pools, 1090 bytes data, 11 objects
+            227 MB used, 91866 MB / 92093 MB avail
+                  17 inactive
+                  30 peering
+                 145 active+clean
+  client io 1163 B/s wr, 2 op/s
+]0;vagrant@alice: ~vagrant@alice:~$ sudo ceph -s w
+    cluster c22aecc1-4066-4a49-b2ac-2e1c591b1d37
+     health HEALTH_WARN 11 pgs peering; 28 pgs stuck inactive; 28 pgs stuck unclean
+     monmap e1: 3 mons at {daisy=192.168.122.114:6789/0,eric=192.168.122.115:6789/0,frank=192.168.122.116:6789/0}, election epoch 8, quorum 0,1,2 daisy,eric,frank
+     mdsmap e6: 1/1/1 up {0=daisy=up:active}, 2 up:standby
+     osdmap e40: 6 osds: 6 up, 6 in
+      pgmap v67: 192 pgs, 3 pools, 1884 bytes data, 19 objects
+            228 MB used, 91865 MB / 92093 MB avail
+                  17 inactive
+                  11 peering
+                 164 active+clean
+  client io 757 B/s wr, 2 op/s
+
+2014-11-08 23:23:02.112732 mon.0 [INF] mdsmap e6: 1/1/1 up {0=daisy=up:active}, 2 up:standby
+2014-11-08 23:23:04.349895 mon.0 [INF] pgmap v67: 192 pgs: 17 inactive, 11 peering, 164 active+clean; 1884 bytes data, 228 MB used, 91865 MB / 92093 MB avail; 757 B/s wr, 2 op/s
+2014-11-08 23:23:05.649957 mon.0 [INF] pgmap v68: 192 pgs: 192 active+clean; 1884 bytes data, 227 MB used, 91866 MB / 92093 MB avail; 375 B/s wr, 1 op/s
+^C]0;vagrant@alice: ~vagrant@alice:~$ sudo ceph -w s
+    cluster c22aecc1-4066-4a49-b2ac-2e1c591b1d37
+     health HEALTH_OK
+     monmap e1: 3 mons at {daisy=192.168.122.114:6789/0,eric=192.168.122.115:6789/0,frank=192.168.122.116:6789/0}, election epoch 8, quorum 0,1,2 daisy,eric,frank
+     mdsmap e6: 1/1/1 up {0=daisy=up:active}, 2 up:standby
+     osdmap e40: 6 osds: 6 up, 6 in
+      pgmap v68: 192 pgs, 3 pools, 1884 bytes data, 20 objects
+            227 MB used, 91866 MB / 92093 MB avail
+                 192 active+clean
+  client io 375 B/s wr, 1 op/s
+]0;vagrant@alice: ~vagrant@alice:~$ exit
+
+Script done on Sat Nov  8 23:23:14 2014
