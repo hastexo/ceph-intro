@@ -182,3 +182,9 @@ Eucalyptus.
 
 
 <iframe class="stretch" src="https://asciinema.org/api/asciicasts/13761?speed=3&size=medium&autoplay=1" id="asciicast-iframe-13761" name="asciicast-iframe-13761" scrolling="yes"></iframe>
+Note: Deploying Ceph is not rocket science thanks to the `ceph-deploy`
+utility, which in this example allowed us to deploy a simple Ceph
+cluster in under 4 minutes. Deployment facilities for Puppet, Chef,
+Ansible and SaltStack are readily available. More information is
+available at http://ceph.com. So go forth and run it, play with it,
+join the mailing lists, get on IRC, find me there.
