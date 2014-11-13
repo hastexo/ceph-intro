@@ -3,4 +3,4 @@
 SCRIPT=`mktemp --tmpdir=. script.XXXXXXXXXX`
 TIMING=$SCRIPT.timing
 
-screen script -t${TIMING} $SCRIPT
+script -c "screen -xR" -t${TIMING} $SCRIPT
