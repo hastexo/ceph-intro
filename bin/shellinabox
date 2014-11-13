@@ -12,7 +12,6 @@ shellinaboxd \
 	--localhost-only \
 	--no-beep \
 	--disable-ssl \
-	--port=4242 \
 	--css=$dir/../css/shellinabox.css \
 	--service /:$USER:$USER:HOME:"screen -xR"
 
