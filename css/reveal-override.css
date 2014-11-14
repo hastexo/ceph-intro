@@ -17,9 +17,9 @@
 }
 
 /* Blow iframe up to full screen size */
-.reveal section iframe
+.reveal iframe
 {
-  height: 100%;
+  height: 20em;
   width: 100%;
   margin: 2%;
 }
