@@ -16,6 +16,6 @@
 [kerryrodden](http://bl.ocks.org/kerryrodden)
 
 ## These slides
-http://fghaas.github.io/driving-it-2014
-https://github.org/fghaas/driving-it-2014
+http://fghaas.github.io/ceph-intro
+https://github.org/fghaas/ceph-intro
 
