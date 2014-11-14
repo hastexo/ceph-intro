@@ -1,5 +1,5 @@
 <!-- .slide: data-background-image="images/ceph-logo.svg" data-background-color="white" data-background-size="contain" -->
-Note: And then came Ceph.
+Note: ... came Ceph.
 
 Ceph is a distributed storage system designed to provide block,
 file and object storage on a software-defined platform running on
@@ -7,13 +7,19 @@ commodity hardware, providing automatic scale-out and high
 availability on a Petabyte scale using open replication protocols, all
 under a free software license.
 
+Now clearly, that's way too many ...
+
 
 <!-- .slide: data-background="images/bingo.png" data-background-size="contain" -->
-Note: Too many buzzwords? Thought so. So let's dissect what Ceph is
+Note: ... buzzwords to be useful, so let's dissect what Ceph is
 about, where it came from, and how it's significant and useful. I can
 speak my mind freely here, because I run an independent company that
 -- while we do work with Ceph very frequently -- is not affiliated
 with any business entity that is related to Ceph.
+
+Now the **original** motivation behind Ceph -- back in 2005 -- was
+to provide a distributed filesystem, akin to the then-popular Lustre
+filesystem, but without its shortcomings. In short, it was meant to be ...
 
 
 # Lustre
@@ -21,22 +27,26 @@ with any business entity that is related to Ceph.
 --------
 # = Ceph
 
-Note: The **original** motivation behind Ceph -- back in 2005 -- was
-to provide a distributed filesystem, akin to the then-popular Lustre
-filesystem, but without its shortcomings. In short, it was meant to be
-"Lustre without the suck".
+Note: ... "Lustre without the suck".
 
 
 <!-- .slide: data-background="https://farm2.staticflickr.com/1264/1425884952_70a8ba747e_o_d.jpg" data-background-size="cover" -->
 Note: It originally came out of a research project (and PhD thesis) at
 the University of California, Santa Cruz (UCSC). The doctoral
-candidate was Sage Weil.
+candidate was Sage Weil; the research was partially funded by the US
+Department of Energy. Sage continues to serve as Ceph's lead developer
+to this day, even though Ceph has grown a massive developer community
+in the interim.
+
+At the core of Ceph ...
 
 
 <!-- .slide: data-background-color="white" data-background-image="images/object-storage.svg" data-background-size="contain" -->
-Note: At the core of Ceph lies the notion of a low-level **object**. And
+Note: ... lies the notion of a low-level **object**. And
 object is a chunk of data, of arbitrary size with an arbitrary number
 of key-value attributes attached to it.
+
+And collectively, that object store is known as...
 
 
 ## Reliable
@@ -46,8 +56,7 @@ of key-value attributes attached to it.
 ## Store
 ---------
 # RADOS
-Note: collectively, the distributed object store that Ceph provides is
-referred to as RADOS.
+Note: ... RADOS.
 
 
 <!-- .slide: data-background-color="white" data-background-image="images/object-storage.svg" data-background-size="contain" -->
@@ -104,12 +113,14 @@ number of times, and where these replicas are distributed according to
 an operator defined policy, such that the system can, for example,
 keep copies of each object in separate failure domains.
 
+Now if you want to use Ceph, as an application developer,...
+
 
 ## librados
 ## libradospp
 ## python-ceph
 ## phprados
-Note: Ceph provides a set of CRUSH-aware libraries, which can be used
+Note: ... Ceph provides a set of CRUSH-aware libraries, which can be used
 to interact with RADOS directly. This enables application developers
 to store data in a reliable, distributed, highly available object
 store without having to worry **how** exactly that data is stored.
