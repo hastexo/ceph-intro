@@ -31,7 +31,6 @@ the things that can also use potentially fatal damage upon failure,
 are the tires.
 
 
-
 <!-- .slide: data-background="https://farm4.staticflickr.com/3370/3308974893_dc8dfba391_b_d.jpg" data-background-size="cover" -->
 Note: And yet, people who like cars typically really don't show off
 their tires that much.
