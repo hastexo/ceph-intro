@@ -18,4 +18,3 @@
 ## These slides
 http://hastexo.github.io/ceph-intro
 https://github.org/hastexo/ceph-intro
-
