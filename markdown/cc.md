@@ -16,6 +16,6 @@
 [kerryrodden](http://bl.ocks.org/kerryrodden)
 
 ## These slides
-http://hastexo.github.io/ceph-intro
-https://github.org/hastexo/ceph-intro
+http://fghaas.github.io/ceph-intro
+https://github.org/fghaas/ceph-intro
 
