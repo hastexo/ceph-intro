@@ -123,6 +123,18 @@ Reveal.initialize({
         id: '76a205375ab6c6b8', // Obtained from socket.io server
         url: 'revealjs.jit.su', // Location of socket.io server
     },
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value is automatically
+    // increased for audio files with longer duration
+    autoSlide: 1000,
+    audioPrefix: 'audio/',
+    audioSuffix: '.mp3',
+
+    keyboard: {
+      82: function() { Recorder.toggleRecording(); }, // press 'r' to start/stop recording
+      90: function() { Recorder.downloadZip(); }      // press 'z' to download zip containing audio files
+    },
     
     // Optional libraries used to extend on reveal.js
     dependencies: [
@@ -135,6 +147,8 @@ Reveal.initialize({
 	{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
 	{ src: 'reveal.js/plugin/multiplex/master.js', async: true },
 	{ src: 'reveal.js/plugin/multiplex/client.js', async: true },
+	{ src: 'reveal.js/plugin/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },
+	{ src: 'reveal.js/plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }
     ]
 });
     </script>
