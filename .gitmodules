@@ -1,7 +1,7 @@
 [submodule "reveal.js"]
 	path = reveal.js
-	url = git://github.com/hakimel/reveal.js
-	branch = master
+	url = git://github.com/fghaas/reveal.js
+	branch = dev-with-audio-slideshow
 [submodule "qrcodejs"]
 	path = qrcodejs
 	url = git://github.com/davidshimjs/qrcodejs
