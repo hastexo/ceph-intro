@@ -131,11 +131,6 @@ Reveal.initialize({
     audioPrefix: 'audio/',
     audioSuffix: '.mp3',
 
-    keyboard: {
-      82: function() { Recorder.toggleRecording(); }, // press 'r' to start/stop recording
-      90: function() { Recorder.downloadZip(); }      // press 'z' to download zip containing audio files
-    },
-    
     // Optional libraries used to extend on reveal.js
     dependencies: [
 	{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -147,7 +142,6 @@ Reveal.initialize({
 	{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
 	{ src: 'reveal.js/plugin/multiplex/master.js', async: true },
 	{ src: 'reveal.js/plugin/multiplex/client.js', async: true },
-	{ src: 'reveal.js/plugin/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },
 	{ src: 'reveal.js/plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }
     ]
 });
