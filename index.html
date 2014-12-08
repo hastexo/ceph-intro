@@ -45,20 +45,20 @@
 	<section id="intro"
 		 data-markdown="markdown/intro.md"
 		 data-separator="^\n\n\n"
-		 data-vertical="^\n\n"
-		 data-notes="^Note:" >
+		 data-separator-vertical="^\n\n"
+		 data-separator-notes="^Note:" >
 	</section>
 	<section id="ceph"
 		 data-markdown="markdown/ceph.md"
 		 data-separator="^\n\n\n"
-		 data-vertical="^\n\n"
-		 data-notes="^Note:" >
+		 data-separator-vertical="^\n\n"
+		 data-separator-notes="^Note:" >
 	</section>
 	<section id="cc"
 		 data-markdown="markdown/cc.md"
 		 data-separator="^\n\n\n"
-		 data-vertical="^\n\n"
-		 data-notes="^Note:" >
+		 data-separator-vertical="^\n\n"
+		 data-separator-notes="^Note:" >
 	</section>
 	<section>
 	  <div class="qrcode" id="qrcode-contact" />
@@ -96,14 +96,14 @@ for (var i = 0; i < n; i++) {
     </script>
 
     <script src="reveal.js/lib/js/head.min.js"></script>
-    <script src="reveal.js/js/reveal.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
     
     <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
-    controls: false,
-    progress: false,
+    controls: true,
+    progress: true,
     history: true,
     center: true,
 
@@ -123,7 +123,14 @@ Reveal.initialize({
         id: '76a205375ab6c6b8', // Obtained from socket.io server
         url: 'revealjs.jit.su', // Location of socket.io server
     },
-    
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value is automatically
+    // increased for audio files with longer duration
+    autoSlide: 5000,
+    audioPrefix: 'audio/',
+    audioSuffix: '.mp3',
+
     // Optional libraries used to extend on reveal.js
     dependencies: [
 	{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -135,6 +142,7 @@ Reveal.initialize({
 	{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
 	{ src: 'reveal.js/plugin/multiplex/master.js', async: true },
 	{ src: 'reveal.js/plugin/multiplex/client.js', async: true },
+	{ src: 'reveal.js/plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }
     ]
 });
     </script>
